@@ -1,0 +1,88 @@
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,900);
+
+#cover
+{
+/*  background: url(../Images/Home.jpg) no-repeat center center fixed; 
+  background-size: cover;
+  height: 100vh;
+  float:center;
+  text-align: center;*/
+  background: url(../Images/Home5blury.jpg) no-repeat -100px top fixed; 
+  height:100vh;
+  /*background: #8FA68E;*/
+  top:0;
+  bottom:0;
+  width: 100%;
+}
+
+#cover-title
+{
+    text-align: center;
+    vertical-align: middle;
+    height:8%;
+    width:100%;
+    position: absolute;
+    top: 0;
+    bottom:0%;
+    margin: auto;
+    background-color:  rgba(0, 10, 10, 0.6);
+}
+
+.bold
+{
+    color: #CC3910;
+    font-size: 35pt;
+    font-weight: 900;
+}
+
+
+.light
+{
+    color: #CCC59E;
+    font-size: 35pt;
+    font-weight: 300;
+}
+
+.offset-top
+{
+    margin:auto;
+    padding-top: 90px;
+}
+
+body
+{
+    font-family: 'Lato', serif;
+}
+
+.italic
+{
+    font-style: italic;
+}
+
+#p-about
+{
+    font-family: 'Vollkorn', serif;
+    padding-top: 45px;
+}
+
+.separator
+{
+    /*background-color: #123456;*/
+    height: 100px;
+}
+
+/*
+pale red 732D33
+pink BF766F
+clear F2DAD8
+dark red 260101
+blood 0D0000
+
+orange CC3910
+yellow sand F1F2C0
+sand CCC59E
+green 8FA68E
+brown 332F29
+*/
+
