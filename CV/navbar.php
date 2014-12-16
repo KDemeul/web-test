@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" role="navigation" id="mainnav">   
+<nav class="navbar navbar-inverse" role="navigation" id="mainnav">   
 	<div class="navbar-header">   
 		<div class="navbar-brand">Kilian Demeulemeester</div>
 	</div>

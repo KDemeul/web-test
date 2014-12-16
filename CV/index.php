@@ -21,7 +21,7 @@
 	<?php include("cover.php");?>
 
 	<?php include("navbar.php");?>
-
+	
 	<?php include("About.php"); ?>
 
 	<?php include("separator.html"); ?>

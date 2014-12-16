@@ -3,14 +3,8 @@
 
 #cover
 {
-/*  background: url(../Images/Home.jpg) no-repeat center center fixed; 
-  background-size: cover;
-  height: 100vh;
-  float:center;
-  text-align: center;*/
   background: url(../Images/Home5blury.jpg) no-repeat -100px top fixed; 
   height:100vh;
-  /*background: #8FA68E;*/
   top:0;
   bottom:0;
   width: 100%;
