@@ -21,3 +21,22 @@ $(document).ready(function() {
 		}
 	});
 });
+
+// $(document).ready(function(){
+// 	$('[data-toggle="popover"]').popover({
+// 		placement : 'top'
+// 	});
+// });
+
+$(document).ready(function(){
+	$(function(){
+		$('.circle-button').popover({
+			placement: 'top',
+			trigger: 'hover',
+			html: 'true',
+			content: function() {
+				return this.children[0].innerHTML;
+			}
+		});
+	});
+});

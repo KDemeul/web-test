@@ -8,7 +8,7 @@
 				<ul class="nav navbar-nav ">
 					<li> <a href="#cover">Home</a> </li>
 					<li> <a href="#about">About</a></li>
-					<li> <a href="#">Skills</a></li>
+					<li> <a href="#skills">Skills</a></li>
 					<li> <a href="#">Projects</a></li>
 					<li> <a href="#test">Contact</a></li>
 				</ul>

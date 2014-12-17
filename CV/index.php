@@ -21,18 +21,15 @@
 	<?php include("cover.php");?>
 
 	<?php include("navbar.php");?>
-	
-	<div class="container">
 
-		<?php include("About.php"); ?>
+	<?php include("About.php"); ?>
 
-		<?php include("separator.html"); ?>
+	<?php include("skills.php"); ?>
 
-		<div class="jumbotron">
-			<?php include("Lipsum/lipsum5.php");?>
-		</div>
-
-	</div> <!-- end div container>
+	<?php include("separator.html"); ?>
+	<div class="jumbotron">
+		<?php include("Lipsum/lipsum5.php");?>
+	</div>
 
 	<!-- Bootstrap core JavaScript
 	================================================== -->
@@ -41,8 +38,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="js/tooltip.js"></script>
 	<!-- Custom script -->
 	<script src="hidenav.js"></script>
-
+	<script src="parallax.js"></script>
 </body>
 </html>	
