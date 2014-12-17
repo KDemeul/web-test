@@ -1,5 +1,6 @@
 <div id="about">
-	<div class="container">
+		<div class="separator">
+		</div>
 		<div class="row">
 			<div class="col-lg-offset-2 col-lg-3">
 				<img class="img-circle img-responsive" alt="me" src="Images/Me.jpg"/>
@@ -12,5 +13,4 @@
 				<p>	I will be available starting April 2015. </p>
 			</div>
 		</div>
-	</div>
 </div>

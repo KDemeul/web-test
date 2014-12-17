@@ -1,15 +1,23 @@
 $(document).ready(function() {
-	console.log("ready!");
-	var navpos = $('#mainnav').offset();
-	console.log(navpos.top);
-	$(window).bind('scroll', function() {
-		if ($(window).scrollTop() > navpos.top) {
-			$('#mainnav').addClass('navbar-fixed-top');
-			$('#about').addClass('offset-top');
+	$('#nav').affix({
+		offset: {
+			top: $('#cover').height()
 		}
-		else {
-			$('#mainnav').removeClass('navbar-fixed-top');
-			$('#about').removeClass('offset-top');
+	});
+}); 
+
+
+$(document).ready(function() {
+	$('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			}
 		}
 	});
 });

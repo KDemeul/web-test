@@ -1,6 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Vollkorn:400,400italic);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,300,900);
 
+
+body
+{
+    font-family: 'Lato', serif;
+}
+
 #cover
 {
   background: url(../Images/Home5blury.jpg) no-repeat -100px top fixed; 
@@ -20,7 +26,6 @@
     top: 0;
     bottom:0%;
     margin: auto;
-    background-color:  rgba(0, 10, 10, 0.6);
 }
 
 .bold
@@ -38,17 +43,6 @@
     font-weight: 300;
 }
 
-.offset-top
-{
-    margin:auto;
-    padding-top: 90px;
-}
-
-body
-{
-    font-family: 'Lato', serif;
-}
-
 .italic
 {
     font-style: italic;
@@ -64,6 +58,34 @@ body
 {
     /*background-color: #123456;*/
     height: 100px;
+}
+
+.navbar
+{
+    background: white;
+    color: #CC3910;
+}
+
+.navbar a
+{
+    color: #CC3910;
+}
+
+.nav-wrapper
+{
+    min-height:50px;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.underline
+{
+    border-bottom: 1px solid #CC3910;
 }
 
 /*
