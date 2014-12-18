@@ -1,6 +1,6 @@
 <div class="separator"></div>
 		<div class="arrow center">
-			<a href="#skills" class="bold"></a>
+			<a href="#skills" class="bold glyphicon glyphicon-chevron-down" ></a>
 		</div>
 <div id="skills">
 	<div class="container">
@@ -63,7 +63,7 @@
 		</div>
 		<div class="separator"></div>		
 		<div class="arrow center">
-			<a href="#projects" class="bold"></a>
+			<a href="#projects" class="bold glyphicon glyphicon-chevron-down" ></a>
 		</div>
 	</div>
 </div>
