@@ -1,13 +1,20 @@
 .popover
 {
     min-width: 200px;
-    background: #408990;
+    background: #2980B9;
     border-radius: 0px;
 }
 
-.popover .arrow:after
+.popover ul
 {
-    border: #408990;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.popover .arrow
+{
+    display: none;
 }
 
 .popover-list li
@@ -15,11 +22,15 @@
     font-family: 'Vollkorn', serif;
     font-weight: 300;
     font-size: 15pt;
-    color: white;
+    color: #ECF0F1;
 }
 
 .circle-button
 {
+    background-color: #E74C3C;
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-position: center;
     height:150px; 
     width:150px; 
     margin: 0 -75px; 
@@ -30,53 +41,33 @@
     border: 0;
 }
 
-#icon-brain
+.circle-button:hover
 {
-    background: url(../Images/Icons/brainWhPi.png) no-repeat center;
-    background-size: 300px 300px;
+    background-color: #2980B9;
 }
 
-#icon-brain:hover
+#icon-brain
 {
-    background: url(../Images/Icons/brainWhBl.png) no-repeat center;
-    background-size: 300px 300px;
+    background-image: url(../Images/Icons/brain.png);
 }
 
 #icon-robot
 {
-    background: url(../Images/Icons/robotWhPi.png) no-repeat center;
-    background-size: 300px 300px;
+    background-image: url(../Images/Icons/robot.png);
 }
 
-#icon-robot:hover
-{
-    background: url(../Images/Icons/robotWhBl.png) no-repeat center;
-    background-size: 300px 300px;
-}
 
 #icon-eye
 {
-    background: url(../Images/Icons/eyeWhPi.png) no-repeat center;
-    background-size: 300px 300px;
+    background-image: url(../Images/Icons/eye.png);
 }
 
-#icon-eye:hover
-{
-    background: url(../Images/Icons/eyeWhBl.png) no-repeat center;
-    background-size: 300px 300px;
-}
 
 #icon-computer
 {
-    background: url(../Images/Icons/computerWhPi.png) no-repeat center;
-    background-size: 300px 300px;
+    background-image: url(../Images/Icons/computer.png);
 }
 
-#icon-computer:hover
-{
-    background: url(../Images/Icons/computerWhBl.png) no-repeat center;
-    background-size: 300px 300px;
-}
 
 /*
 pale red 732D33
@@ -91,4 +82,10 @@ yellow sand F1F2C0
 sand CCC59E
 green 8FA68E
 brown 332F29
+
+dark blue 2C3E50
+red E74C3C
+clear ECF0F1
+blue clear 3498DB
+blue 2980B9
 */

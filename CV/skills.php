@@ -2,20 +2,20 @@
 		<div class="arrow center">
 			<a href="#skills" class="bold"></a>
 		</div>
-<div id="skills"> <!-- class="parallax-window" data-parallax="scroll" data-image-src="Images/background-pi.png"> -->
+<div id="skills">
 	<div class="container">
 		<div class="separator"></div>
 		<div class="row">
-			<div class="col-lg-offset-4 col-lg-4">
+			<div class="col-sm-offset-4 col-sm-4">
 				<h1>MY SKILLS</h1>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-offset-5 col-lg-2 underline"></div>
+			<div class="col-sm-offset-5 col-sm-2 underline"></div>
 		</div>
 		<div class="separator"></div>
 		<div class="row">
-			<div class="col-lg-3">
+			<div class="col-sm-3">
 				<div class="row limit-max-width">
 					<?php
 						$id = "icon-robot";
@@ -28,10 +28,10 @@
 				</div>
 			</div>			
 
-			<div class="col-lg-3">			
+			<div class="col-sm-3">			
 				<?php
 						$id = "icon-computer";
-						$datacontent = array("C++","JAVA","C#","Matlab");
+						$datacontent = array("C++","C#","JAVA","Matlab");
 						include("circle-button.php");
 					?>
 				<div class="row">
@@ -39,21 +39,21 @@
 				</div>
 			</div>	
 
-			<div class="col-lg-3">				
+			<div class="col-sm-3">				
 				<?php
 						$id = "icon-eye";
 						$datacontent = array("Microsoft Office","LaTeX");
 						include("circle-button.php");
 					?>
 				<div class="row">
-					<h3>office</h3>
+					<h3>Visualization</h3>
 				</div>
 			</div>	
 
-			<div class="col-lg-3">			
+			<div class="col-sm-3">			
 				<?php
 						$id = "icon-brain";
-						$datacontent = array("System","Control","Robotics");
+						$datacontent = array("Computer Games","Multi-agent","Algorithms");
 						include("circle-button.php");
 					?>
 				<div class="row">
@@ -61,6 +61,9 @@
 				</div>
 			</div>	
 		</div>
-		<div class="separator"></div>
+		<div class="separator"></div>		
+		<div class="arrow center">
+			<a href="#projects" class="bold"></a>
+		</div>
 	</div>
 </div>

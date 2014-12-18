@@ -30,12 +30,12 @@ body
 
 #cover a
 {
-    color: #CC3910;
+    color: #E74C3C;
 }
 
 .bold
 {
-    color: #CC3910;
+    color: #E74C3C;
     font-size: 35pt;
     font-weight: 900;
 }
@@ -43,7 +43,7 @@ body
 
 .light
 {
-    color: #CCC59E;
+    color: #2C3E50;
     font-size: 35pt;
     font-weight: 300;
 }
@@ -61,6 +61,7 @@ body
 
 #p-about
 {
+    /*padding: auto;*/
     padding-top: 45px;
 }
 
@@ -73,25 +74,25 @@ body
 
 #about .img-circle
 {
-    border: 8px solid grey;
+    border: 8px solid #ECF0F1;
 }
 
 
 .separator
 {
     /*background-color: #123456;*/
-    height: 100px;
+    height: 75px;
 }
 
 .navbar
 {
     background: white;
-    color: #CC3910;
+    color: #E74C3C;
 }
 
 .navbar a
 {
-    color: #CC3910;
+    color: #E74C3C;
 }
 
 .nav-wrapper
@@ -108,23 +109,20 @@ body
 
 #skills
 {
-    /*background-image: url(../Images/background-pan.jpg);*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: left bottom; */
-    /*background-color: #F7F7F7;*/
-    background-color: #CCCCCC;
-    /*background-size: 30%;*/
+    background-color: #ecf0f1;
+    background-image: url(../Images/Textures/bright-squares.png);
 }
 
 #skills .underline
 {
-    border-bottom: solid #BF766F 3px;
+    border-bottom: solid #E74C3C 1px;
 }
 
 #skills h1
 {
     text-align: center;
-    color: #BF766F;
+    font-weight: 300;
+    color: black;
 }
 
 #skills h3
@@ -151,4 +149,10 @@ yellow sand F1F2C0
 sand CCC59E
 green 8FA68E
 brown 332F29
+
+dark blue 2C3E50
+red E74C3C
+clear ECF0F1
+blue clear 3498DB
+blue 2980B9
 */

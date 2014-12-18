@@ -1,0 +1,107 @@
+.cell
+{
+	text-align: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #E74C3C;
+}
+
+.toggling
+{
+	background-color: #ecf0f1;
+    background-image: url(../Images/Textures/bright-squares.png);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.cell h3
+{
+	text-align: center;
+    font-variant: small-caps;
+}
+
+#projects .underline
+{
+    border-bottom: solid #E74C3C 1px;
+}
+
+#projects h1
+{
+    text-align: center;
+    font-weight: 300;
+    color: black;
+}
+
+#slamsson
+{
+	background-image: url(../Images/Projects/robot.jpg);
+}
+
+#starcraft
+{
+	background-image: url(../Images/Projects/starcraft.jpg);
+}
+
+#guarding
+{
+	background-image: url(../Images/Projects/unity.jpg);
+	background-color: black;
+    background-size: 100%;
+}
+
+#needle
+{
+	background-image: url(../Images/Projects/ultrasonix.jpg);
+}
+
+.desc-project
+{
+	background-color: #ecf0f1;
+    background-image: url(../Images/Textures/bright-squares.png);
+	padding-top: -25px;
+}
+
+.desc-project h1
+{
+	text-align: center;
+	font-variant: small-caps;
+}
+
+
+.desc-project h3
+{
+	text-align: center;
+	font-variant: small-caps;
+	color: rgba(0,0,0,0.8);
+}
+
+.big
+{
+	color: #2C3E50;
+    font-size: 20pt;
+    font-weight: 300;
+}
+
+/*
+pale red 732D33
+pink BF766F
+clear F2DAD8
+dark red 260101
+blood 0D0000
+blue 408990
+
+orange CC3910
+yellow sand F1F2C0
+sand CCC59E
+green 8FA68E
+brown 332F29
+
+dark blue 2C3E50
+red E74C3C
+clear ECF0F1
+blue clear 3498DB
+blue 2980B9
+*/

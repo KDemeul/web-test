@@ -3,10 +3,10 @@
 		<div class="separator">
 		</div>
 		<div class="row">
-			<div class="col-lg-offset-2 col-lg-3">
+			<div class="col-xs-offset-2 col-xs-3">
 				<img class="img-circle img-responsive" alt="me" src="Images/Me.jpg"/>
 			</div>
-			<div class="col-lg-offset-1 col-lg-6" id="p-about">
+			<div class="col-xs-offset-1 col-xs-6" id="p-about">
 				<h2>Who am I?</h2>
 				<p> I am a junior engineer specialized in Computer Science and Robotics. </p>
 				<p>	I hold a double-degree from Supélec (France) and KTH (Sweden). </p>

@@ -26,6 +26,8 @@
 
 	<?php include("skills.php"); ?>
 
+	<?php include("Project/projects.php"); ?>
+
 	<?php include("separator.html"); ?>
 	<div class="jumbotron">
 		<?php include("Lipsum/lipsum5.php");?>
@@ -40,7 +42,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	<script src="js/tooltip.js"></script>
 	<!-- Custom script -->
-	<script src="hidenav.js"></script>
+	<script src="customscript.js"></script>
 	<script src="parallax.js"></script>
 </body>
 </html>	
