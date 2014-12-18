@@ -93,6 +93,10 @@ $(document).ready(function() {
 			$('html,body').delay(10).animate({
 				scrollTop: $(beingDisplay).offset().top
 			}, 500);
+		} else {
+			$('html,body').delay(10).animate({
+				scrollTop: $('#projects').offset().top
+			}, 500);
 		}
 	});
 
