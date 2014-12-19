@@ -1,8 +1,8 @@
 <div class="separator"></div>
 		<div class="arrow center">
-			<a href="#skills" class="bold glyphicon glyphicon-chevron-down" ></a>
+			<a href="#skills" class="bold fa-angle-down" ></a>
 		</div>
-<div id="skills">
+<div id="skills" class="container-squares">
 	<div class="container">
 		<div class="separator"></div>
 		<div class="row">
@@ -63,7 +63,7 @@
 		</div>
 		<div class="separator"></div>		
 		<div class="arrow center">
-			<a href="#projects" class="bold glyphicon glyphicon-chevron-down" ></a>
+			<a href="#projects" class="bold fa-angle-down" ></a>
 		</div>
 	</div>
 </div>

@@ -14,6 +14,8 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<!-- Custom css -->
 	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link href="css/bootstrap-social.css" rel="stylesheet">
 
 
 </head>
@@ -28,10 +30,9 @@
 
 	<?php include("Project/projects.php"); ?>
 
-	<?php include("separator.html"); ?>
-	<div class="jumbotron">
-		<?php include("Lipsum/lipsum5.php");?>
-	</div>
+	<?php include("Contact/contact.php"); ?>
+
+	<?php include("footer.php");?>
 
 	<!-- Bootstrap core JavaScript
 	================================================== -->

@@ -1,16 +1,14 @@
 .cell
 {
 	text-align: center;
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: #E74C3C;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #E74C3C;
 }
 
 .toggling
 {
-	background-color: #ecf0f1;
-    background-image: url(../Images/Textures/bright-squares.png);
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -20,19 +18,19 @@
 .cell h3
 {
 	text-align: center;
-    font-variant: small-caps;
+	font-variant: small-caps;
 }
 
 #projects .underline
 {
-    border-bottom: solid #E74C3C 1px;
+	border-bottom: solid #E74C3C 1px;
 }
 
 #projects h1
 {
-    text-align: center;
-    font-weight: 300;
-    color: black;
+	text-align: center;
+	font-weight: 300;
+	color: black;
 }
 
 #slamsson
@@ -49,7 +47,7 @@
 {
 	background-image: url(../Images/Projects/unity.jpg);
 	background-color: black;
-    background-size: 100%;
+	background-size: 100%;
 }
 
 #needle
@@ -59,8 +57,6 @@
 
 .desc-project
 {
-	background-color: #ecf0f1;
-    background-image: url(../Images/Textures/bright-squares.png);
 	padding-top: -25px;
 }
 
@@ -78,11 +74,36 @@
 	color: rgba(0,0,0,0.8);
 }
 
-.big
+.btn-caroussel
 {
 	color: #2C3E50;
-    font-size: 20pt;
-    font-weight: 300;
+	font-weight: 900;
+}
+
+.btn-caroussel:hover
+{
+	color: #E74C3C;
+}
+
+#projects .fa-github
+{
+	color: #444444;
+}
+
+#projects .fa-github:hover
+{
+	color: #E74C3C;
+}
+
+.col-vert-center-parent {
+	display: table;
+	table-layout: fixed;
+}
+
+.col-vert-center-child {
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
 }
 
 /*

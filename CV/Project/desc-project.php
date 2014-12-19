@@ -1,4 +1,4 @@
-<div class="desc-project row">
+<div class="desc-project container-squares red row">
 	<div id="desc-slamsson">	
 		<?php
 		$index = 0;

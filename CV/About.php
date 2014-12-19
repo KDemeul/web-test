@@ -2,7 +2,7 @@
 	<div id="about">
 		<div class="separator">
 		</div>
-		<div class="row">
+		<div class="row vertical-align">
 			<div class="col-xs-offset-2 col-xs-3">
 				<img class="img-circle img-responsive" alt="me" src="Images/Me.jpg"/>
 			</div>

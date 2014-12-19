@@ -13,22 +13,22 @@
 	<div class="separator"></div>
 	<div class="row">
 		<div class="col-sm-3 cell" id="slamsson" href="#desc-slamsson">
-			<div class="toggling">
+			<div class="toggling  container-squares red ">
 				<h3>dr. slamsson</h3>
 			</div>
 		</div>
-		<div class="col-sm-3 cell" id="starcraft" href="#desc-starcraft">
-			<div class="toggling">
+		<div class="col-sm-3 cell " id="starcraft" href="#desc-starcraft">
+			<div class="toggling  container-squares red ">
 				<h3>starcraft</h3>
 			</div>
 		</div>
-		<div class="col-sm-3 cell" id="guarding" href="#desc-guarding">
-			<div class="toggling">
+		<div class="col-sm-3 cell " id="guarding" href="#desc-guarding">
+			<div class="toggling container-squares red">
 				<h3>the guarding problem</h3>
 			</div>
 		</div>
-		<div class="col-sm-3 cell" id="needle" href="#desc-needle">
-			<div class="toggling">
+		<div class="col-sm-3 cell " id="needle" href="#desc-needle">
+			<div class="toggling  container-squares red ">
 				<h3>Flocus</h3>
 			</div>
 		</div>
