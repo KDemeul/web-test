@@ -15,7 +15,7 @@ $(document).ready(function() {
 			if (target.length) {
 				$('html,body').animate({
 					scrollTop: target.offset().top
-				}, 500);
+				}, 1000);
 				return false;
 			}
 		}
@@ -92,11 +92,11 @@ $(document).ready(function() {
 		if(beingDisplay != "none"){
 			$('html,body').delay(10).animate({
 				scrollTop: $(beingDisplay).offset().top
-			}, 500);
+			}, 1000);
 		} else {
 			$('html,body').delay(10).animate({
 				scrollTop: $('#projects').offset().top
-			}, 500);
+			}, 1000);
 		}
 	});
 
