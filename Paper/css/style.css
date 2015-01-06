@@ -1,0 +1,203 @@
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,900);
+
+body
+{
+    font-family: 'Lato', serif;
+    font-size: 12pt;
+    font-weight: 300;
+}
+
+#title
+{
+    height:100vh;
+    top:0;
+    bottom:0;
+    width: 100%;
+}
+
+#title h1,h3
+{
+    color: #2980B9;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.chapter
+{
+    text-align: justify;
+}
+
+.chapter h1
+{
+    text-align: center;
+    font-weight: 300;
+    color: black;
+
+}
+
+.chapter h2
+{
+    color: #2C3E50;
+    font-style: italic;
+}
+
+.limit-max-width
+{
+    width: 50%;
+    margin:auto;
+}
+
+.separator-xs
+{
+    height: 25px;
+}
+
+.separator-sm
+{
+    /*background-color: #123456;*/
+    height: 50px;
+}
+
+.separator-md
+{
+    /*background-color: #123456;*/
+    height: 75px;
+}
+
+.separator-lg
+{
+    /*background-color: #123456;*/
+    height: 100px;
+}
+
+.rule-xs
+{
+    width:25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height:1px;
+    background-color:#E74C3C;
+}
+
+.rule-sm
+{
+    width:50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height:1px;
+    background-color:#E74C3C;
+}
+
+.rule-md
+{
+    width:75px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height:1px;
+    background-color:#E74C3C;
+}
+
+.rule-lg
+{
+    width:100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height:1px;
+    background-color:#E74C3C;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.textsc
+{
+    font-variant: small-caps;
+}
+
+.grey-bg
+{
+    background-image: url("http://www.transparenttextures.com/patterns/cream-paper.png");
+}
+
+.arrow
+{
+    color: #E74C3C;
+    font-size: 20pt;
+    text-align: center;
+}
+
+.arrow:hover 
+{
+    color: #2980B9;
+    text-decoration: none;
+}
+
+.arrow:visited 
+{
+    text-decoration: none;
+}
+
+.arrow:hover 
+{
+    text-decoration: none;
+}
+
+.arrow:active 
+{
+    text-decoration: none;
+}
+
+.chapter .fa-ul
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ending
+{
+    color: black;
+    font-size: 8pt;
+}
+
+.big-font
+{
+    font-size: 15pt;
+}
+
+
+
+/*
+pale red 732D33
+pink BF766F
+clear F2DAD8
+dark red 260101
+blood 0D0000
+
+orange CC3910
+yellow sand F1F2C0
+sand CCC59E
+green 8FA68E
+brown 332F29
+
+dark blue 2C3E50
+red E74C3C
+clear ECF0F1
+blue clear 3498DB
+blue 2980B9
+*/

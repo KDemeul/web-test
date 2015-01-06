@@ -1,0 +1,91 @@
+.popover
+{
+    min-width: 200px;
+    background: #2980B9;
+    border-radius: 0px;
+}
+
+.popover ul
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.popover .arrow
+{
+    display: none;
+}
+
+.popover-list li
+{
+    font-family: 'Vollkorn', serif;
+    font-weight: 300;
+    font-size: 15pt;
+    color: #ECF0F1;
+}
+
+.circle-button
+{
+    background-color: #E74C3C;
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:150px; 
+    width:150px; 
+    margin: 0 -75px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+    border-radius: 50%;
+    border: 0;
+}
+
+.circle-button:hover
+{
+    background-color: #2980B9;
+}
+
+#icon-brain
+{
+    background-image: url(../Images/Icons/brain.png);
+}
+
+#icon-robot
+{
+    background-image: url(../Images/Icons/robot.png);
+}
+
+
+#icon-eye
+{
+    background-image: url(../Images/Icons/eye.png);
+}
+
+
+#icon-computer
+{
+    background-image: url(../Images/Icons/computer.png);
+}
+
+
+/*
+pale red 732D33
+pink BF766F
+clear F2DAD8
+dark red 260101
+blood 0D0000
+blue 408990
+
+orange CC3910
+yellow sand F1F2C0
+sand CCC59E
+green 8FA68E
+brown 332F29
+
+dark blue 2C3E50
+red E74C3C
+clear ECF0F1
+blue clear 3498DB
+blue 2980B9
+*/
