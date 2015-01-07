@@ -29,7 +29,7 @@
 
 	<?php include('acknowledgement.html');?>
 
-	<?php include('introduction.html');?>
+	<?php include('introduction.php');?>
 
 	<!-- Bootstrap core JavaScript
 	================================================== -->

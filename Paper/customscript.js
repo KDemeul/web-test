@@ -17,7 +17,7 @@ $(document).ready(function() {
 	
 	var newLine, el, title, link, ToC;
 
-	ToC = "<p><ul class=\"fa-ul\">";
+	ToC = "<p><ol>";
 
 	$(document).find(".chapter").each(function() {
 		el = $(this);
@@ -25,19 +25,19 @@ $(document).ready(function() {
 
 		newLine = "<li class=\"big-font\">" + title.text() + "</li>";
 
-		newLine += "<ul class=\"fa-ul\">";
+		newLine += "<ol>";
 
 		$(this).find("h4").each(function(){
 			newLine += "<li>" + $(this).text() + "</li>";
 		});
 
-		newLine += "</ul></p>";
+		newLine += "</ol></p>";
 
 		ToC += newLine;
 
 	});
 
-	ToC += "</ul></p>";
+	ToC += "</ol></p>";
 
 	$("#contenttableofcontent").html(ToC);
 });
