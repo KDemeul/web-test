@@ -1,0 +1,39 @@
+<p>
+	A wide variety of medical diagnostis and therapeutic procedues involve inserting long thin objects into the human body (needle, electrode, tube, etc.) to perform different tasks: sampling cells or tissues, introduce substances into tissues, measure electric activity in the cortex, etc. Such procedures requires highly accurate localization of the tool.
+</p>
+<p>
+	Different apparatus have been developed to solve the problem of tool localization inside the human body. 
+</p>
+<p>
+	Stereotactic surgery makes use of a rigid structure fixed to the patient body to create a new frame of reference relative to the patient, delivering recognizable landmarks in the images and serving as a stable mounting base and instrument guide. 
+	However, difficulties in setting a reliable frame of reference have limited most of its application to brain surgery. 
+</p>
+<p>
+
+	To avoid the limitations and patient discomfort associated with the stereotactic frame, frame-less technique have been developed.
+	Computed tomography (CT-scan) allows the practician to see inside the human body.
+	A large series of 2D radiographic images are taken around a single axis of rotation, computed together to create 3D images. 
+	However, CT-guided organ puncture require a great number of CT-scans (increasing procedure time) and take up a lot of space around the patient (blocking access to the body). 
+	The same situation is encountered with MRI imaging, with in addition the incompatibly with metal object. 
+</p>
+<p>
+
+	Studies have shown the interest of ultrasound based guided puncture \cite{Chapman06}, \cite{Saini10}. 
+	Ultrasound imaging is particularly suited for tool localization and tracking because of its short acquisition time, its compatibily with metal object and the absence of ionizing radiation.
+	Ultimately, high-resolution ultrasound scanners are portable and affordable.  
+</p>
+<p>
+
+	The objective of this thesis is to solve the problem of needle localization in ultrasound images by proposing robust algorithms. We provide a summary of existing localization methods and propose three algorithms that permit to identify the needle. Our principal contribution is to combine prosition sensors with image analysis to localize the needle axis. 
+</p>
+<p>
+
+	This thesis is organized as follows. We start in <a href="#background">Chapter 2</a> with a description of the research context and of the current methods achieving needle localization whithin ultrasound images. 
+	<a href="#input">Chapter 3</a> consist of a description of the data acquisition process. 
+	The core of the thesis consists of <a href="#roi">Chapter 4</a>, <a href="#axis">Chapter 5</a> and <a href="#tip">Chapter 6</a>.  
+	First, we describe how sensors positions are used to compute the region of interest inside the ultrasound images.  
+	We then deal with the axis localization and the explaination of its two main algorithms (RANSAC and KALMAN).
+	Once the needle axis is known, the tip localization is achieve with the method describe in <a href="#tip">Chapter 6</a>.
+	The experimental setups and their results can be found in <a href="#experiments">Chapter 7</a>.
+	The thesis is concluded with <a href="#conclusion">Chapter 8</a>. 
+</p>

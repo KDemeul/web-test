@@ -20,16 +20,85 @@
 
 </head>
 <body>
+	<?php 
+		include('part/title.html');
+
+		include("navbar.php");
+
+		$background = 'grey-bg';
+		$id = 'abstract';
+		$title = 'Abstract';
+		$chapter = 'part/abstract.html';
+		$next = 'acknowledgement';
+		include('chapter.php');
 	
-	<?php include('title.html');?>
+		$background = '';
+		$id = 'acknowledgement';
+		$title = 'Acknowledgement';
+		$chapter = 'part/acknowledgement.html';
+		$next = 'tableofcontent';
+		include('chapter.php');
 
-	<?php include('tableofcontent.html');?>
+		include('part/tableofcontent.html');
 
-	<?php include('abstract.html');?>
+		$background = '';
+		$id = 'introduction';
+		$title = 'Introduction';
+		$chapter = 'part/introduction.html';
+		$next = 'background';
+		include('chapter.php');
 
-	<?php include('acknowledgement.html');?>
+		$background = 'grey-bg';
+		$id = 'background';
+		$title = 'Background';
+		$chapter = 'part/background.html';
+		$next = 'input';
+		include('chapter.php');
 
-	<?php include('introduction.php');?>
+		$background = '';
+		$id = 'input';
+		$title = 'Data acquisition';
+		$chapter = 'part/input.html';
+		$next = 'roi';
+		include('chapter.php');
+
+		$background = 'grey-bg';
+		$id = 'roi';
+		$title = 'Region of interest';
+		$chapter = 'part/roi.html';
+		$next = 'axis';
+		include('chapter.php');
+
+		$background = '';
+		$id = 'axis';
+		$title = 'Axis localization';
+		$chapter = 'part/axis.html';
+		$next = 'tip';
+		include('chapter.php');
+
+		$background = 'grey-bg';
+		$id = 'tip';
+		$title = 'Tip localization';
+		$chapter = 'part/tip.html';
+		$next = 'experiment';
+		include('chapter.php');
+
+		$background = '';
+		$id = 'experiment';
+		$title = 'Experiments & Results';
+		$chapter = 'part/experiments.html';
+		$next = 'conclusion';
+		include('chapter.php');
+
+	    $background = 'grey-bg';
+		$id = 'conclusion';
+		$title = 'Conclusion';
+		$chapter = 'part/conclusion.html';
+		$next = '';
+		include('chapter.php');
+
+		include('footer.php');
+	?>
 
 	<!-- Bootstrap core JavaScript
 	================================================== -->

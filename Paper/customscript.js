@@ -14,6 +14,14 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+	$('#nav').affix({
+		offset: {
+			top: $('#title').height()
+		}
+	});
+}); 
+
+$(document).ready(function() {
 	
 	var newLine, el, title, link, ToC;
 

@@ -8,6 +8,51 @@ body
     font-weight: 300;
 }
 
+.vertical-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.navbar
+{
+    background: white;
+    color: #E74C3C;
+}
+
+.navbar a
+{
+    color: black;
+    font-variant: small-caps;
+    font-size: 12pt;
+    right: 50px;
+}
+
+ul.nav a:hover
+{
+    background: white;
+    color: #E74C3C;
+}
+
+ul.nav
+{
+    background: white;
+}
+
+
+.nav-wrapper
+{
+    min-height:50px;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
 #title
 {
     height:100vh;
@@ -118,12 +163,6 @@ body
     background-color:#E74C3C;
 }
 
-.vertical-align {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
 
 .textsc
 {
@@ -178,6 +217,11 @@ body
 .big-font
 {
     font-size: 15pt;
+}
+
+a
+{
+    color: #E74C3C;
 }
 
 
