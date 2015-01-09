@@ -1,52 +1,205 @@
-<h4>Motivation</h4>
-
+<h4>Motivation </h4>
 <p>
-Tools such as metallic electrodes, injection needles and miniature tips that serves for sampling tissue cells, introducing fluids to body, measuring cell activites are routinely employed. 
-In order to acess deeper structure, practicians traditionally relied on surface marking to guide the needle into the correct position. 
+	Tools such as metallic electrodes, injection needles and miniature tips that serves for sampling tissue cells, introducing fluids to body, measuring cell activites are routinely employed. 
+	In order to acess deeper structure, practicians traditionally relied on surface marking to guide the needle into the correct position. 
 </p>
 <p>
-One common intervention is brachytherapy in which a radiation source is placed inside or next to the area requiring treatment. It is commonly used as an effective treatment for cervical, prostate, breast, and skin cancer. 
-Another example is the ultrasound-guided breast biopsy which is performed to remove some cells and examine them under a microscope to determine a diagnosis.
+	One common intervention is brachytherapy in which a radiation source is placed inside or next to the area requiring treatment. It is commonly used as an effective treatment for cervical, prostate, breast, and skin cancer. 
+	Another example is the ultrasound-guided breast biopsy which is performed to remove some cells and examine them under a microscope to determine a diagnosis.
 </p>
 <p>
-In those interventions, needle misplacement has the potiential to damage structures like arteries, nerve bundles and pleura. 
-Qualitative measurements of the location of objects in medical images is a key to improve the quality of such procedures. In this context, ultrasound images  guidance offers several advantages including a greater likelihood of sucess, better visualization of the target and they are produce at video-rate allowing either real-time analysis by the practician or automatic steering.
+	In those interventions, needle misplacement has the potiential to damage structures like arteries, nerve bundles and pleura. 
+	Qualitative measurements of the location of objects in medical images is a key to improve the quality of such procedures. 
+</p>
+<p>
+	In this context, ultrasound images  guidance offers several advantages including a greater likelihood of sucess, better visualization of the target and they are produce at video-rate allowing either real-time analysis by the practician or automatic steering. Lastly, the purchase and operational cost are relatively modest (compared to other medical modalities) and the compactness of the probes facilitates the integration in the practician workspace.   
 </p>
 
-<h4>Technical background</h4>
+<h4> Technical background </h4>
+<p>
+	Medical ultrasound permits to view internal body structures including tendons, muscles, joints, vessels and internal organs by exploiting the backscattering of energy in the boundaries between tissues.
+	Numbers of sound waves are typically formed by a piezoelectric transducer and are transmitted to the body along pre-determined trajectories, each of them forming a narrow ultrasound beam. 
+	The return of the sound wave vibrates the transducer which turns the vibrations into electrical pulses which are processed and transformed into a digital image.
+	Typically, the waves frequencies used in medical practice are in the range from 1 to 20 MHz and the image acquisition rate (frame rate) is usually in the range from 5 to 80 frames per second \ref{Barva-TR-2007-12}.
+</p>
+<p> 
+	However, object detection in ultrasound images is made difficult by the following issues.
+</p>
 
+<div class="row">
+	<div class="col-xs-3 right-align">
+		<b>Absorption</b> 
+	</div>
+	<div class="col-xs-8">
+		<p>
+			Some structure or object absorbs sound energy when sound waves collide with them. Part of the absorbed energy is transformed into heat and part is transmitted. The energy transform into heat is said to have been "lost".
+		</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-3 right-align">
+		<b>Artifacts</b> 
+	</div>
+	<div class="col-xs-8">
+		<p>
+			Reverberation and refraction of ultrasound waves creats artifacts which distort the object appearance.
+		</p>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="col-xs-3 right-align">
+		<b>Attenuation</b> 
+	</div>
+	<div class="col-xs-8">
+		<p>
+			The intensity of the reflected ultrasound waves decrease with the travel distance. Thus, the deeper the object, the lower the intensity of the reflected ultrasound waves.
+		</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-3 right-align">
+		<b>Noise</b> 
+	</div>
+	<div class="col-xs-8">
+		<p>
+			Medical ultrasound images are characteristic by its granular noise pattern
+			called speckle, reducing the signal-to-noise ratio.
+		</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-3 right-align">
+		<b>Resolution</b> 
+	</div>
+	<div class="col-xs-8">
+		<p>
+			Practicians use needle with diameter of several hundred of microns. Hence, their dimension is comparable to the resolution of the ultrasound system.
+		</p>
+	</div>
+</div>
+
+<p> Lastly, this paper will often use the following notions. </p>
+
+<div class="row">
+	<div class="col-xs-3 right-align">
+		<b>Phantom</b> 
+	</div>
+	<div class="col-xs-8">
+		<p>
+			A phantom is a tissue-mimicking object with well known properties (homegeneous, known density) use in medical research.
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-offset-3 col-xs-4">
+		<img class="img-responsive" alt="Phantom" src="fig/Phantom.jpg"/>
+		<p class="center">Fig. Needle being insert into a phantom with ultrasound control </p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-3 right-align">
+		<b>2D-3D transducers</b> 
+	</div>
+	<div class="col-xs-8">
+		<p>
+			Almost all ultrasound transducers (also called probe) are composed of an array of small piezoelectric crystals. The physical layout of crystals on the transducer determines the size of the field of view (FOV) and its dimensionality (2D or 3D).
+		</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-offset-3 col-xs-8">
+		<div class="row">
+			<div class="col-xs-6">
+				<img class="img-responsive" alt="Phantom" src="fig/probec5-2.png"/>
+			</div>
+			<div class="col-xs-6">
+				<img class="img-responsive" alt="Phantom" src="fig/probe4dl14.png"/>
+			</div>
+		</div>
+		<div class="row">
+			<p class="center">Fig. 2D probe (left) and 3D probe (right) </p>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-3 right-align">
+		<b>GPS</b> 
+	</div>
+	<div class="col-xs-8">
+		<p>
+			The Ultrasonix company develop the technology <em>SonixGPS</em>, which consist of a combination of position sensors: one is situated in the probe, one is inside the needle (along the axis) and the last is fixed to the ultrasound machine (it provides the frame of reference). Ultrasonix refer to those captors as GPS devices (we will use the same terminology).
+		</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-offset-3 col-xs-8">
+		<img class="img-responsive" alt="Phantom" src="fig/sonixgps.png"/>
+		<p class="center">Fig. SonixGPS scheme</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-3 right-align">
+		<b> Localization accuracy </b>
+	</div>
+	<div class="col-xs-8">
+		The results given experimentally by the localization algorithms have to be measured. We will refer to:
+		<ul>
+			<li> Axis error as the euclidian distance between the actual axis (ground truth) and the estimated one. </li>
+			<li> Tip error as the euclidian distance between the actual tip position (ground truth) and the estimated one. </li>
+		</ul>
+	</div>
+</div>
+
+<h4>State of the art</h4>
+
+<p> 
+	Many technique have been developped to achieve needle localization in ultrasound images. In this section, we summarize the principle of each technique and discuss experimental results in terms of localization accuracy. Needle localization can be seen has a two step process: localization of the needle axis (a line inside the US image) and the localization of its tip (a point inside the US image).
+</p>
+	RANSAC (<b>RA</b>ndom <b>SA</b>mple <b>C</b>onsensus) algorithm is by far the most used technique for axis localization. It is an iterative method to estimate parameters of a mathematical model from a set of observed data which contains outliers. 
+
+	It is a non-deterministic algorithm in the sense that it produces a reasonable result only with a certain probability, with this probability increasing as more iterations are allowed. The algorithm was first published by Fischler and Bolles in 1981 \ref{Fischler1981} and has been used widely in signal and image processing.
+
+	It is frequently use in axis localization because of its few assumptions about the data (direction, bending) and its good results \ref{Uher-13, Chatelain13a, BARV-05b, Zhao-12b, UHER-09a, zhao2013automatic}. The main principle of the aglorithm is develop in Chapter \ref{axis}.
+</p>
+Projection of 3D image to a 2D one 
+
+Segmentation 
+
+No previous assumption (needle shape, needle insertion axis line). 
+
+Line filtering (enhance contrast) 
+
+Voxel classification (separate tool voxels) 
+
+Model fitting (RANSAC, R-RANSAC, Least-squares fitting) 
+
+Tracking (KALMAN, UKF) 
+
+Control scheme to automatically guide the probe 
+
+Needle measurements generated by the Doppler ultrasound 
+
+Parallel Integral Projection transform (hierarchical mesh-grid algorithm) 
+
+Speckle tracking method 
+
+Machine learning-based method (statistical boosting approach) 
+
+Radon transform 
+
+Hough transform
+</p>
 <!--
-<h4>Best sentences</h4>
-<ol>
-	<li> 
-		wide variety of medical diagnostic and therapeutic procedures	
-	</li>
-	<li> 
-		Segmenting the trajectory of the needles in ultrasound images will facilitate guiding them within the tissue.
-	</li>
-	<li> 
-		provide assistance for biopsy needle or micro-electrode insertion, or a robotic system performing this insertion.
-	</li>
-	<li> 
-		These systems require medical image feedback for accurate closed-loop control
-	</li>
-	<li> 
-		ultrasound produces relatively large amounts of measurement noise
-	</li>
-	<li> 
-		ultrasound imaging represents an inexpensive and a flexible approach for a real-time image acquisition of tissue structure with metal instruments.
-	</li>
-	<li> 
-		Segmentation of needles in ultrasound images remains a challenging problem.
-	</li>
-	<li> 
-		We address the problem of fast and accurate localization of miniature surgical instruments like needles or electrodes
-	</li>
-	<li> 
-		ultrasound imaging offers a real-time acquisition speed but it has to deal with a typical speckle noise and other acoustic artifacts in the image
-	</li>
-</ol>
-
 <h4>All algorithms</h4>
 <ol>
 	<li> 

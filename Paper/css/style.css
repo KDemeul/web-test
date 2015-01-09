@@ -224,7 +224,10 @@ a
     color: #E74C3C;
 }
 
-
+.right-align
+{
+    text-align: right;
+}
 
 /*
 pale red 732D33
