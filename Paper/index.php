@@ -109,5 +109,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	<!-- Custom script -->
 	<script src="customscript.js"></script>
+	<script src="parallax.js"></script>
 </body>
 </html>	
