@@ -1,8 +1,5 @@
 <?php if($title != ''){?>
 <div class="row">
-	<div class="col-xs-1 diamond-offset show">
-			<div class="diamond"></div>
-	</div>
 	<div class="col-xs-10 show">
 		<div class="row-title">
 			<?php echo($title);?>
@@ -15,10 +12,6 @@
 
 <?php if($subtitle != ''){?>
 <div class="row row-eq-height">
-	<div class="col-xs-1 vertical-line-parent show">
-		<div class="vertical-line">
-		</div>
-	</div>
 	<div class="col-xs-10 show">
 		<div class="row-subtitle">
 			<?php echo($subtitle);?>
@@ -29,10 +22,6 @@
 
 <?php if($date != ''){?>
 <div class="row row-eq-height">
-	<div class="col-xs-1 vertical-line-parent show">
-		<div class="vertical-line">
-		</div>
-	</div>
 	<div class="col-xs-8 show">
 		<div class="row-date">
 			<?php echo($date);?>
@@ -43,10 +32,6 @@
 
 <?php if($subsubtitle != ''){?>
 <div class="row row-eq-height">
-	<div class="col-xs-1 vertical-line-parent show">
-		<div class="vertical-line">
-		</div>
-	</div>
 	<div class="col-xs-10 show">
 		<div class="row-subsubtitle">
 			<?php echo($subsubtitle);?>
@@ -57,10 +42,6 @@
 
 <?php if($p != ''){?>
 <div class="row row-eq-height">
-	<div class="col-xs-1 vertical-line-parent show">
-		<div class="vertical-line">
-		</div>
-	</div>
 	<div class="col-xs-10 show">
 		<div class="row-p">
 			<?php echo($p);?>

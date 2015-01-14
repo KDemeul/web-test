@@ -5,6 +5,8 @@ body
 {
     font-family: 'Lato', serif;
     background-color: rgba(0,0,0,0.1);
+    color: black;
+    font-size: 9pt;
 }
 
 .CV 
@@ -17,6 +19,139 @@ body
     background-color: white;
 }
 /*ratio: 1.414285714*/
+
+.profile-intro {
+    margin-top: 35px;
+    position: relative;
+}
+
+.profile-pic {
+    border: 5px solid #08AEAC;
+    text-align: center;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    width: 147px;
+    height: 147px;
+    border: 5px solid #08AEAC;
+    overflow: hidden;
+    margin: 0 auto;
+    background: #fafafa;
+}
+
+.profile-border
+{
+    padding: 2pt;
+}
+
+.intro-title1 {
+    border-bottom: 1px solid #08AEAC;
+    color: #222222;
+    margin-top: 0;
+    text-align: left;
+    font-size: 20pt;
+    color: #444;
+    letter-spacing: -1pt;
+    padding-bottom: 10px;
+    font-weight: 200;
+    margin-top: 15px;
+}
+
+.intro-title2 {
+    color: #555555;
+    font-size: 12pt;
+    text-align: left;
+    color: #777;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+.intro-profile
+{
+    margin-top: -10px;
+    text-align: left;
+}
+
+.timeline
+{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 250px 312.5px;
+  background-color: #08AEAC;
+  width: 3cm;
+}
+
+.timeline-margin
+{
+    background-image: url(../Images/progress-bar.png);
+}
+
+.timeline-start
+{
+    background-image: url(../Images/progress-start.png) no-repeat center center;
+}
+
+.timeline-point
+{
+    background-image: url(../Images/progress-point.png);
+
+}
+
+.timeline-title {
+    background-image: url(../Images/progress-title.png);
+}
+
+.timeline-education {
+    background-image: url(../Images/progress-education.png);
+}
+
+.timeline-work {
+    background-image: url(../Images/progress-work.png);
+}
+
+.timeline-bubble {
+    background-image: url(../Images/progress-bubble.png);
+}
+
+.section-title
+{
+    color: #000523;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15pt;
+    line-height: 15pt;
+    margin-top: 10pt;
+}
+
+.section-item-title-1 {
+    color: #3b658a;
+    border-bottom: 1px solid #ccc;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12pt;
+    margin-top: 7px;
+}
+
+.section-item-title-2 {
+    font-weight: 700;
+    font-size: 9pt;
+    margin-top: 7px;
+}
+
+
+.graduation-time, .job {
+    color: #777777;
+    font-weight: 700;
+    font-size: 11pt;
+}
+
+.graduation-date, .job-date {
+    font-size: 10pt;
+    font-style: italic;
+    font-weight: 200;
+}
+
 
 .row-eq-height {
   display: -webkit-box;
@@ -202,7 +337,10 @@ body
 
 .right-line 
 {
-    border-right: 2px solid #08AEAC;
+    border-right: 1px solid #08AEAC;
+    /*position: absolute;*/
+    top:-10px;
+    bottom: 0;
 }
 
 .bold

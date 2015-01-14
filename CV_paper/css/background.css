@@ -1,3 +1,19 @@
+.bg-green
+{
+    background-color: #08AEAC;
+}
+
+.bg-darkblue
+{ 
+	background-color: #031634;
+}
+
+.bg-red
+{ 
+	background-color: #da222b;
+}
+
+
 .bg-orange
 {
     background-color: #CC3910;
@@ -13,24 +29,9 @@
     background-color: #CCC59E;
 }
 
-.bg-green
-{
-    background-color: #08AEAC;
-}
-
 .bg-brown
 {
     background-color: #332F29;
-}
-
-.bg-darkblue
-{ 
-	background-color: #2C3E50;
-}
-
-.bg-red
-{ 
-	background-color: #E74C3C;
 }
 
 .bg-clear
@@ -48,7 +49,15 @@
 	background-color: #2980B9;
 }
 
+.col-green
+{
+	color: #08AEAC;
+}
 
+.col-blue
+{
+	color: #3b658a;
+}
 /*
 pale red 732D33
 pink BF766F
