@@ -20,11 +20,9 @@
 	<link href="css/bootstrap-social.css" rel="stylesheet">
 </head>
 <body>
-	<div class="separator-md"></div>
 	<div class="CV">
 		<?php include('CV.php');?>
 	</div>
-	<div class="separator-md"></div>
 	<!-- Bootstrap core JavaScript
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->

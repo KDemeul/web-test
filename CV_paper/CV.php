@@ -1,8 +1,5 @@
-<div class="separator-xs col-xs-12 bg-green" style="height: 7px;"></div>
-
-<div class="row">
-	<div class="col-xs-1" style="width: 1cm"></div>
-	<div class="col-xs-2 timeline timeline-progress timeline-margin full-height" style="height: 19px;"></div>
+<div class="row" style="width:21cm; margin-left:0px">
+<div class="col-xs-12 bg-blue" style="height: 10px;"></div>
 </div>
 
 <div class="row line">
@@ -14,9 +11,9 @@
 </div>
 
 <div class="row">
-	<div class="col-xs-1" style="width: 1cm; height: 44px;"></div>
-	<div class="col-xs-2 timeline timeline-dot timeline-margin full-height" style="height: 44px;"></div>
-	<div class="col-xs-5" style="height: 44px;">
+	<div class="col-xs-1" style="width: 1cm; height: 80px;"></div>
+	<div class="col-xs-2 timeline timeline-dot timeline-margin full-height" style="height: 80px;"></div>
+	<div class="col-xs-8" style="height: 80px;">
 		<p class="intro-profile">
 			<i class="fa fa-home"></i>&nbsp;&nbsp;3 rue Gustave Courbet, Montpellier (34090), FRANCE<br>
 			<i class="fa fa-at"></i>&nbsp;&nbsp;<a href="mailto:kilian.demeule@gmai.com" style="color: black;">kilian.demeule@gmail.com</a>
@@ -24,16 +21,17 @@
 			<br>
 			<i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;(+33) 06.88.55.29.37
 		</p>
+		<h2 class="intro-title2" style="margin-top: 0pt">I'm looking for a Junior Developer position. </h2>
 	</div>
 </div>
 
-<div class="row">
+<!-- <div class="row">
 	<div class="col-xs-1" style="width: 1cm; height: 20px;"></div>
 	<div class="col-xs-2 timeline timeline-dot timeline-margin full-height" style="height: 20px;"></div>
 	<div class="col-xs-5" style="height: 20px;">
 		<h2 class="intro-title2" style="margin-top: 0pt; height: 20px">I'm looking for a Junior Developer position. </h2>
 	</div>
-</div>
+</div> -->
 
 <!-- EDUCATION -->
 <?php 
@@ -61,6 +59,17 @@ include('item-education.php');
 <?php 
 $title = "EXPERIENCES";
 include('section-title.php')
+?>
+
+<!-- LIRMM -->
+<?php 
+$height = 145;
+$job_title = "LIRMM - CNRS";
+$job_subtitle = "Laboratory of informatics, robotics and microelectronics of montpellier";
+$job_status =  "Master thesis";
+$job_date = "September 2014 - February 2015";
+$job_desc = "The project encompassed the exploration of techniques and methodologies best suited for solving the problem of needle localization in ultrasound images. Once done, we developed a software (C++, Qt, opencv) achieving automatic needle detection (axis and tip) and enhancing visualization.";  
+include('item-experience.php');
 ?>
 
 <!-- PERSONNAL PROJECTS -->
@@ -101,20 +110,10 @@ include('section-title.php')
 	<div class="col-xs-1" style="height: 283px;"></div>
 </div>
 
-<!-- LIRMM -->
-<?php 
-$height = 145;
-$job_title = "LIRMM - CNRS";
-$job_subtitle = "Laboratory of informatics, robotics and microelectronics of montpellier";
-$job_status =  "Master thesis";
-$job_date = "September 2014 - February 2015";
-$job_desc = "The project encompassed the exploration of techniques and methodologies best suited for solving the problem of needle localization in ultrasound images. Once done, we developed a software (C++, Qt, opencv) achieving automatic needle detection (axis and tip) and enhancing visualization.";  
-include('item-experience.php');
-?>
 
 <!-- Language -->
 <?php 
-$title = "Language";
+$title = "Language skills";
 include('section-title.php')
 ?>
 <div class="row line">
@@ -147,7 +146,7 @@ include('section-title.php')
 ?>
 <div class="row line">
 	<div class="col-xs-1" style="width: 1cm"></div>
-	<div class="col-xs-2 timeline timeline-progress timeline-margin full-height" style="height: 55px;"></div>
+	<div class="col-xs-2 timeline timeline-progress timeline-margin full-height" style="height: 53px;"></div>
 	<div class="col-xs-8">
 		<p>
 			Book, trip, video games, photoshop, 3D modeling, short film, informatic, badminton

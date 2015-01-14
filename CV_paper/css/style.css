@@ -4,7 +4,7 @@
 body
 {
     font-family: 'Lato', serif;
-    background-color: rgba(0,0,0,0.1);
+    /*background-color: black;*/
     color: black;
     font-size: 9pt;
 }
@@ -15,8 +15,10 @@ body
     /*height: 35.35714285cm;*/
     width: 21cm;
     height: 29.7cm;
-    margin: auto;
-    background-color: white;
+/*    margin: auto;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+*/    background-color: white;
 }
 /*ratio: 1.414285714*/
 
@@ -45,13 +47,13 @@ body
 }
 
 .intro-title1 {
-    border-bottom: 1px solid #08AEAC;
+    border-bottom: 1px solid #2980B9;
     color: #222222;
     margin-top: 0;
     text-align: left;
     font-size: 20pt;
     color: #444;
-    letter-spacing: -1pt;
+    letter-spacing: 0pt;
     padding-bottom: 10px;
     font-weight: 200;
     margin-top: 15px;
@@ -78,7 +80,7 @@ body
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 250px 312.5px;
-  background-color: #08AEAC;
+  background-color: #2980B9;
   width: 3cm;
 }
 
