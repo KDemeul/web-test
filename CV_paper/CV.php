@@ -2,20 +2,20 @@
 </div>
 
 <div class="col-xs-12 separator-lg"></div>
-<div class="col-xs-12 separator-lg"></div>
+<div class="col-xs-12 separator-md"></div>
 
 <div class="row">
-	<div class="col-xs-6">
+	<div class="cv col-xs-6 show">
 		<div class="CV-title"><span class="bold">Kilian</span> <span class="light">Demeulemeester</span></div>
 	</div>
-	<div class="col-xs-5">
-		<div class="col-xs-6">
-			<div class="cv cv-status">23 ans, Célibataire </div>
-			<div class="cv cv-adress">3 rue Gustave Courbet 34090 Montpellier</div>
+	<div class="cv col-xs-6">
+		<div class="col-xs-6 right-line show">
+			<div class="cv-status">23 ans, Célibataire </div>
+			<div class="cv-adress">3 rue Gustave Courbet <br> 34090 Montpellier</div>
 		</div>
-		<div class="col-xs-6">
-			<div class="cv cv-mail">kilian.demeule@gmail.com</div>
-			<div class="cv cv-phone">(+33) 06.88.55.29.37 </div>
+		<div class="col-xs-6 show">
+			<div class="cv-mail"><i class="fa fa-at"></i> kilian.demeule@gmail.com</div>
+			<div class="cv-phone"><i class="fa fa-phone"></i> (+33) 06.88.55.29.37 </div>
 		</div>
 	</div>
 </div>

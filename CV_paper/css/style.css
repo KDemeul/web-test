@@ -177,6 +177,7 @@ body
 .cv
 {
     font-size: 9pt;
+    left: -22px;
 }
 
 .cv-status
@@ -187,6 +188,21 @@ body
 .cv-adress
 {
     text-align: right;
+}
+
+.cv-mail
+{
+
+}
+
+.cv-phone
+{
+
+}
+
+.right-line 
+{
+    border-right: 2px solid #08AEAC;
 }
 
 .bold
