@@ -1,0 +1,25 @@
+.left-navbar
+{
+    background-color: #f5f5f5;
+    line-height: 50pt;
+    font-size: 12pt;
+    bottom: 0;
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    border-right: #eee 1px solid;
+}
+
+
+.left-navbar-nav li a
+{
+    border-radius: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.left-navbar-nav li a i::after
+{
+    content:"\00a0";
+}
