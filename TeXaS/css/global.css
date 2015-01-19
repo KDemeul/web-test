@@ -2,10 +2,18 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,300,900);
 
 
+html 
+{
+text-align: justify;
+position: relative;
+min-height: 100%;
+overflow-y: scroll; 
+}
+
 body
 {
-    font-family: 'Lato', serif;
-   	height: 100vh;
+  font-family: 'Lato', serif;
+  margin-bottom: 60px;
 }
 
 .show
@@ -15,27 +23,42 @@ body
 
 .separator-xs
 {
-    height: 25px;
+  height: 25px;
 }
 
 .separator-sm
 {
-    height: 50px;
+  height: 50px;
 }
 
 .separator-md
 {
-    height: 75px;
+  height: 75px;
 }
 
 .separator-lg
 {
-    height: 100px;
+  height: 100px;
 }
 
 .col-xs-height {
-    display:table-cell;
-    float:none;
+  display:table-cell;
+  float:none;
+}
+
+#main-pan
+{
+  position: absolute;
+  left: 220px;
+}
+
+.editable-field
+{
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  /*outline: 0px solid transparent;*/
 }
 
 
