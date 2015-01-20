@@ -7,26 +7,33 @@ $(document).ready(function(){
 		// STRIP HANDLING 
 		//ctrl + shift + E shortcut 
 		if(e.which == 5){ 
-			if( $(this).next().hasClass("strip-visible") ){
-				$(this).next().removeClass("strip-visible");
-			} else {
-				$('.editable-field').next().removeClass("strip-visible");
-				$(this).next().addClass("strip-visible");
-			}
+			// Check if the strip is the next div
+			console.log("Next component is " + $(this).next().attr("class"));
+			if( $(this).next().hasClass("strip") ){
+				// Slide it up then remove
+				console.log("Sliding up and removing");
+				$(this).next().slideUp("fast", function(){
+					$(this).remove();
+				});
+			} else { 
+				// we have to remove the strip anywhere else ...
+				$('.editable-field').each(function(){
+					if( $(this).next().hasClass("strip") ){
+						console.log("Removing: " + $(this).next().text());
+						$(this).next().slideUp("fast", function(){
+							$(this).remove();
+						});
+					}
+				});
+				//  ... and pop it here
+				var newStrip = $('<div class="row strip"></div>');
+				newStrip.load("strip/strip.html");
+				newStrip.hide();
+				$(this).after(newStrip);
+				$(document).ajaxComplete(function(){
+					$('.strip').slideDown('slow');
+				});
+			}	
 		}
-
-
-		$('.editable-field').each(function(){
-			if ($(this).next().hasClass("strip-visible")){
-				$(this).next().slideDown("fast");
-			} else {
-				$(this).next().slideUp("fast");
-			}
-		})
 	});
-
-	// Hide all at start
-	$(".strip").hide();
-
-	
 });

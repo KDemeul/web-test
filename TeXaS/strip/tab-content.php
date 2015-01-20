@@ -1,6 +1,6 @@
 <div class="tab-content strip-tab">
 	<div role="tabpanel" class="tab-pane fade in active" id="title">
-		<?php include('lipsum.html');?>
+		<?php include('strip/title.php');?>
 	</div>
 	<div role="tabpanel" class="tab-pane fade" id="mathematics">
 		<?php include('lipsum.html');?>

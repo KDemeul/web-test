@@ -1,47 +1,23 @@
-<div contenteditable="true" class="editable-field row">
+<div contenteditable="true" class="row editable-field ">
 	<h1> Hello </h1>
 </div>
-<div class="row strip">
-	<?php include("strip/tab-content.php");?>
-	<?php include("strip/base.php");?>
-</div>
 
-<div contenteditable="true" class="editable-field row">
+<div contenteditable="true" class="row editable-field ">
 	<p> Use ctrl + shift + E to pop-up the edition strip </p>
 </div>
-<div class="row strip">
-	<?php include("strip/tab-content.php");?>
-	<?php include("strip/base.php");?>
-</div>
 
-<div contenteditable="true" class="editable-field row">
+<div contenteditable="true" class="row editable-field ">
 	<?php include('lipsum.html');?>
 </div>
-<div class="row strip">
-	<?php include("strip/tab-content.php");?>
-	<?php include("strip/base.php");?>
-</div>
 
-<div contenteditable="true" class="editable-field row">
+<div contenteditable="true" class="row editable-field ">
 	<?php include('lipsum.html');?>
 </div>
-<div class="row strip">
-	<?php include("strip/tab-content.php");?>
-	<?php include("strip/base.php");?>
-</div>
 
-<div contenteditable="true" class="editable-field row">
+<div contenteditable="true" class="row editable-field ">
 	<?php include('lipsum.html');?>
 </div>
-<div class="row strip">
-	<?php include("strip/tab-content.php");?>
-	<?php include("strip/base.php");?>
-</div>
 
-<div contenteditable="true" class="editable-field row">
+<div contenteditable="true" class="row editable-field ">
 	<?php include('lipsum.html');?>
-</div>
-<div class="row strip">
-	<?php include("strip/tab-content.php");?>
-	<?php include("strip/base.php");?>
 </div>
