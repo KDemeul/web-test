@@ -42,13 +42,13 @@
 	<div class="col-xs-3">
 		<div class="checkbox">
 			<label>
-				<input type="checkbox" value="numerotation" checked>
+				<input class="checkbox" type="checkbox" name="numerotation" value="numerotation" checked>
 				Numerotation
 			</label>
 		</div>
 		<div class="checkbox">
 			<label>
-				<input type="checkbox" value="toc" checked>
+				<input class="checkbox" type="checkbox" name="toc" value="toc" checked>
 				In table of content
 			</label>
 		</div>

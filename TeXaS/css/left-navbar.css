@@ -6,10 +6,10 @@
     bottom: 0;
     position: fixed;
     top: 50px;
-    bottom: 0;
     left: 0;
     border-right: #eee 1px solid;
     width: 220px;
+    z-index: 2;
 }
 
 

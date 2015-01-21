@@ -28,7 +28,9 @@
 		<!-- Tab panes -->
 		<div class="tab-content">
 			<div role="tabpanel" class="tab-pane fade in active" id="edit">
+				<div style="width: 1140px;">
 					<?php include('edit.php'); ?>
+				</div>
 			</div>
 			<div role="tabpanel" class="tab-pane fade" id="setting">
 				Application settings 

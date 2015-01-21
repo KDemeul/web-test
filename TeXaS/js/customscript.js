@@ -5,70 +5,85 @@ function addListener(div){
 	div.focusout(function(e){ focusOutEditable($(this)) });
 }
 
-function createNewPart(currentDiv){
-	currentDiv.after('<div class="row row-edit">' + 
-		'<div class="col-xs-2 title-number">' + 
-		'<h1>Part 1.</h1>' +
-		'</div>' +
-		'<div contenteditable="true" class="col-xs-9 editable-field title-text">' + 
-		'<h1>Part</h1>' +
-		'</div>' +
-		'</div>');
+function createNewPart(currentDiv,addNumerotation,addInToc){
+	var newDiv = '<div class="row row-edit">' + 
+	'<div class="col-xs-2 title-number">';
+	if(addNumerotation == 'numerotation'){
+		newDiv += '<h1>Part 1.</h1>';
+	}
+	newDiv += '</div>' +
+	'<div contenteditable="true" class="col-xs-9 editable-field title-text">' + 
+	'<h1>Part</h1>' +
+	'</div>' +
+	'</div>';
+	currentDiv.after(newDiv);
 	addListener(currentDiv.next());
 	refreshNumerotation();
 }
 
-function createNewChapter(currentDiv){
-	currentDiv.after('<div class="row row-edit">' + 
-		'<div class="col-xs-2 title-number">' + 
-		'<h2>Chap 1</h2>' +
-		'</div>' +
-		'<div contenteditable="true" class="col-xs-9 editable-field title-text">' + 
-		'<h2>Chapter</h2>' +
-		'</div>' +
-		'</div>');
-	addListener(currentDiv.next());
-	refreshNumerotation();
-}
-
-
-function createNewSection(currentDiv){
-	currentDiv.after('<div class="row row-edit">' + 
-		'<div class="col-xs-2 title-number">' + 
-		'<h3>I.1-1</h3>' +
-		'</div>' +
-		'<div contenteditable="true" class="col-xs-9 editable-field title-text">' + 
-		'<h3>Section</h3>' +
-		'</div>' +
-		'</div>');
+function createNewChapter(currentDiv,addNumerotation,addInToc){
+	var newDiv = '<div class="row row-edit">' + 
+	'<div class="col-xs-2 title-number">';
+	if(addNumerotation == 'numerotation'){
+		newDiv += '<h2>Chapter 1.</h2>';
+	}
+	newDiv += '</div>' +
+	'<div contenteditable="true" class="col-xs-9 editable-field title-text">' + 
+	'<h2>Chapter</h2>' +
+	'</div>' +
+	'</div>';
+	currentDiv.after(newDiv);
 	addListener(currentDiv.next());
 	refreshNumerotation();
 }
 
 
-function createNewSubsection(currentDiv){
-	currentDiv.after('<div class="row row-edit">' + 
-		'<div class="col-xs-3 title-number">' + 
-		'<h4>I.1-1.1</h4>' +
-		'</div>' +
-		'<div contenteditable="true" class="col-xs-8 editable-field title-text">' + 
-		'<h4>Subsection</h4>' +
-		'</div>' +
-		'</div>');
+function createNewSection(currentDiv,addNumerotation,addInToc){
+	var newDiv = '<div class="row row-edit">' + 
+	'<div class="col-xs-2 title-number">';
+	if(addNumerotation == 'numerotation'){
+		newDiv += '<h3>Section 1.</h3>';
+	}
+	newDiv += '</div>' +
+	'<div contenteditable="true" class="col-xs-9 editable-field title-text">' + 
+	'<h3>Section</h3>' +
+	'</div>' +
+	'</div>';
+	currentDiv.after(newDiv);
 	addListener(currentDiv.next());
 	refreshNumerotation();
 }
 
 
-function createNewSubsubsection(currentDiv){
-	currentDiv.after('<div class="row row-edit">' + 
-		'<div class="col-xs-4 title-number">' + 
-		'<h5>I.1-1.1.1</h5>' +
-		'</div>' +
-		'<div contenteditable="true" class="col-xs-7 editable-field title-text">' + 
-		'<h5>Subsubsection</h5>' +
-		'</div>' +
-		'</div>');
+function createNewSubsection(currentDiv,addNumerotation,addInToc){
+	var newDiv = '<div class="row row-edit">' + 
+	'<div class="col-xs-3 title-number">';
+	if(addNumerotation == 'numerotation'){
+		newDiv += '<h4>Subsection 1.</h4>';
+	}
+	newDiv += '</div>' +
+	'<div contenteditable="true" class="col-xs-8 editable-field title-text">' + 
+	'<h4>Subsection</h4>' +
+	'</div>' +
+	'</div>';
+	currentDiv.after(newDiv);
+	addListener(currentDiv.next());
+	refreshNumerotation();
+}
+
+
+function createNewSubsubsection(currentDiv,addNumerotation,addInToc){
+	var newDiv = '<div class="row row-edit">' + 
+	'<div class="col-xs-3 title-number">';
+	if(addNumerotation == 'numerotation'){
+		newDiv += '<h5>Subsubsection 1.</h5>';
+	}
+	newDiv += '</div>' +
+	'<div contenteditable="true" class="col-xs-8 editable-field title-text">' + 
+	'<h5>Subsubsection</h5>' +
+	'</div>' +
+	'</div>';
+	currentDiv.after(newDiv);
 	addListener(currentDiv.next());
 	refreshNumerotation();
 }
@@ -238,16 +253,19 @@ function onClickTitleButton(){
 		}
 	});
 	var valueChecked = $('.checkbox[name=titleRadio]:checked').val();
+	var addNumerotation = $('.checkbox[name=numerotation]:checked').val();
+	var addInToc = $('.checkbox[name=toc]:checked').val();
+	console.log(valueChecked + ' - ' + addNumerotation + ' - ' + addInToc);
 	if(valueChecked == 'part'){
-		createNewPart(currentDiv);
+		createNewPart(currentDiv,addNumerotation,addInToc);
 	} else if (valueChecked == 'chapter'){ // chapter
-		createNewChapter(currentDiv);
+		createNewChapter(currentDiv,addNumerotation,addInToc);
 	} else if (valueChecked == 'section'){ // section
-		createNewSection(currentDiv);
+		createNewSection(currentDiv,addNumerotation,addInToc);
 	} else if (valueChecked == 'subsection'){ // subsection
-		createNewSubsection(currentDiv);
+		createNewSubsection(currentDiv,addNumerotation,addInToc);
 	}else if (valueChecked == 'subsubsection'){ // subsubsection
-		createNewSubsubsection(currentDiv);
+		createNewSubsubsection(currentDiv,addNumerotation,addInToc);
 	} else { // paragraph
 		createNewParagraph(currentDiv);
 	}
