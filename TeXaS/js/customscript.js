@@ -1,49 +1,132 @@
-function addListenner(currentDiv){
-	currentDiv.next().keypress(function(e){ keyPressEditable(e,$(this)) });
-	currentDiv.next().keydown(function(e){ keyDownEditable(e,$(this)) });
-	currentDiv.next().focusin(function(){ focusInEditable($(this)) });
-	currentDiv.next().focusout(function(){ focusOutEditable($(this)) });
+function addListener(div){
+	div.keypress(function(e){ keyPressEditable(e,$(this)) });
+	div.keydown(function(e){ keyDownEditable(e,$(this)) });
+	div.focusin(function(e){ focusInEditable($(this)) });
+	div.focusout(function(e){ focusOutEditable($(this)) });
 }
 
 function createNewPart(currentDiv){
-	currentDiv.after('<div contenteditable="true" class="row editable-field latex"><h1>Part</h1></div>');
-	addListenner(currentDiv);
+	currentDiv.after('<div class="row row-edit">' + 
+		'<div class="col-xs-2 title-number">' + 
+		'<h1>Part 1.</h1>' +
+		'</div>' +
+		'<div contenteditable="true" class="col-xs-9 editable-field title-text">' + 
+		'<h1>Part</h1>' +
+		'</div>' +
+		'</div>');
+	addListener(currentDiv.next());
+	refreshNumerotation();
 }
 
 function createNewChapter(currentDiv){
-	currentDiv.after('<div contenteditable="true" class="row editable-field latex"><h2>Chapter</h2></div>');
-	addListenner(currentDiv);
+	currentDiv.after('<div class="row row-edit">' + 
+		'<div class="col-xs-2 title-number">' + 
+		'<h2>Chap 1</h2>' +
+		'</div>' +
+		'<div contenteditable="true" class="col-xs-9 editable-field title-text">' + 
+		'<h2>Chapter</h2>' +
+		'</div>' +
+		'</div>');
+	addListener(currentDiv.next());
+	refreshNumerotation();
 }
 
 
 function createNewSection(currentDiv){
-	currentDiv.after('<div contenteditable="true" class="row editable-field latex"><h3>Section</h3></div>');
-	addListenner(currentDiv);
+	currentDiv.after('<div class="row row-edit">' + 
+		'<div class="col-xs-2 title-number">' + 
+		'<h3>I.1-1</h3>' +
+		'</div>' +
+		'<div contenteditable="true" class="col-xs-9 editable-field title-text">' + 
+		'<h3>Section</h3>' +
+		'</div>' +
+		'</div>');
+	addListener(currentDiv.next());
+	refreshNumerotation();
 }
 
 
 function createNewSubsection(currentDiv){
-	currentDiv.after('<div contenteditable="true" class="row editable-field latex"><h4>Subsection</h4></div>');
-	addListenner(currentDiv);
+	currentDiv.after('<div class="row row-edit">' + 
+		'<div class="col-xs-3 title-number">' + 
+		'<h4>I.1-1.1</h4>' +
+		'</div>' +
+		'<div contenteditable="true" class="col-xs-8 editable-field title-text">' + 
+		'<h4>Subsection</h4>' +
+		'</div>' +
+		'</div>');
+	addListener(currentDiv.next());
+	refreshNumerotation();
 }
 
 
 function createNewSubsubsection(currentDiv){
-	currentDiv.after('<div contenteditable="true" class="row editable-field latex"><h5>Subsubsection</h5></div>');
-	addListenner(currentDiv);
+	currentDiv.after('<div class="row row-edit">' + 
+		'<div class="col-xs-4 title-number">' + 
+		'<h5>I.1-1.1.1</h5>' +
+		'</div>' +
+		'<div contenteditable="true" class="col-xs-7 editable-field title-text">' + 
+		'<h5>Subsubsection</h5>' +
+		'</div>' +
+		'</div>');
+	addListener(currentDiv.next());
+	refreshNumerotation();
 }
 
 function createNewParagraph(currentDiv){
-	currentDiv.after('<div contenteditable="true" class="row editable-field latex"><p></p></div>');
-	addListenner(currentDiv);
+	currentDiv.after('<div class="row row-edit">' + 
+		'<div contenteditable="true" class="col-xs-11 editable-field title-text">' + 
+		'...' +
+		'</div>' +
+		'</div>');
+	addListener(currentDiv.next());
+	refreshNumerotation();
+}
+
+function refreshNumerotation(){
+	var partNumber = 0;
+	var chapNumber = 0;
+	var sectionNumber = 0;
+	var subsectionNumber = 0;
+	var subsubsectionNumber = 0;
+	$('.title-number').each(function(){
+		$(this).find('h1').each(function(){
+			partNumber++;
+			$(this).text('Part ' + partNumber + '.');
+			chapNumber = 0;
+			sectionNumber = 0;
+			subsectionNumber = 0;
+			subsubsectionNumber = 0;
+		});
+		$(this).find('h2').each(function(){
+			chapNumber++;
+			$(this).text('Chapter ' + chapNumber + '.');
+			sectionNumber = 0;
+			subsectionNumber = 0;
+			subsubsectionNumber = 0;
+		});
+		$(this).find('h3').each(function(){
+			sectionNumber++;
+			$(this).text(sectionNumber + '.');
+			subsectionNumber = 0;
+			subsubsectionNumber = 0;
+		});
+		$(this).find('h4').each(function(){
+			subsectionNumber++;
+			$(this).text(sectionNumber + '.' + subsectionNumber + '.');
+			subsubsectionNumber = 0;
+		});
+		$(this).find('h5').each(function(){		
+			subsubsectionNumber++;
+			$(this).text(sectionNumber + '.' + subsectionNumber + '.' + subsubsectionNumber + '.');
+		});
+	});
 }
 
 
 var stripIsDisplayed = false;
 function keyPressEditable(e,currentDiv){
 	// STRIP HANDLING 
-
-	console.log("key press: " + e.which);
 	if(e.which == 5){ 	//ctrl + shift + E shortcut 
 		if (!stripIsDisplayed){
 			$('.strip').detach().insertAfter(currentDiv);
@@ -65,102 +148,91 @@ function keyPressEditable(e,currentDiv){
 				});
 			}
 		}
-	} else if(e.which == 13){ 	//enter 
-		e.preventDefault();
-		createNewParagraph(currentDiv);
-		currentDiv.next().focus();
 	} 
 }
 
 function keyDownEditable(e,currentDiv){
-	console.log("key down: " + e.which);
-	if(e.which == 38){
-		var cursorPos = window.getSelection().getRangeAt(0).startOffset;
-		console.log("cursorPos: " + cursorPos);
-		if(cursorPos == 0){
-			currentDiv.prev().focus();
-		}
-	} else if(e.which == 40){
-		var cursorPos = window.getSelection().getRangeAt(0).startOffset;
-		console.log("cursorPos: " + cursorPos + " textLength: " + currentDiv.text().length);
-		if(cursorPos == currentDiv.text().length){
-			focusNext(currentDiv);
-		}
-	} else if(e.which == 8){
-		if(currentDiv.text() == '')
+	if(e.which == 38){ // up arrow
+		e.preventDefault();
+		focusPrev(currentDiv);
+	} else if(e.which == 40){ // down arrow
+		e.preventDefault();
+		focusNext(currentDiv);
+	} else if(e.which == 8){ // remove 
+		if(currentDiv.children('.editable-field').text() == '')
 		{
 			currentDiv.css('background-color','#E74C3C');
-			currentDiv.hide("slow",function(){
-				currentDiv.prev().focus();
+			currentDiv.hide("fast",function(){
+				focusPrev(currentDiv);
 				currentDiv.remove();
+				refreshNumerotation();
 			});
 		}
-	}
+	} else if(e.which == 13) { 	//enter 
+		e.preventDefault();
+		createNewParagraph(currentDiv);
+		focusNext(currentDiv);
+	} 
 }
 
 function focusInEditable(currentDiv){
-	// console.log(currentDiv.html());
-	console.log("Focus in " + currentDiv.text());
-	// if(currentDiv.html() == '<p>Paragraph</p>'){
-	// 	currentDiv.text('');
-	// } else if(currentDiv.html() == '<h1>Part</h1>'){
-	// 	currentDiv.html('<h1></h1>');
-	// } else if(currentDiv.html() == '<p>Paragraph</p>'){
-	// 	currentDiv.text('');
-	// } else if(currentDiv.html() == '<p>Paragraph</p>'){
-	// 	currentDiv.text('');
-	// } else if(currentDiv.html() == '<p>Paragraph</p>'){
-	// 	currentDiv.text('');
-	// } else if(currentDiv.html() == '<p>Paragraph</p>'){
-	// 	currentDiv.text('');
-	// } else {
-	// 	currentDiv.text('');
-	// }
+	// console.log("Focus in " + currentDiv.html());
 }
 
 function focusOutEditable(currentDiv){
-	if(currentDiv.text() == '')
-	{
+	// console.log(currentDiv.children('.editable-field').text());
+	if(currentDiv.children('.editable-field').text() == '')	{
 		currentDiv.css('background-color','#E74C3C');
-		currentDiv.hide("slow",function(){
+		currentDiv.hide("fast",function(){
+			focusPrev(currentDiv);
 			currentDiv.remove();
+			refreshNumerotation();
 		});
 	}
 }
 
 function focusNext(currentDiv){
+	// console.log("Focusing on next editable-field");
 	var nextDiv;
 	var found = false;
-	$('.editable-field').each(function(){
+	$(".row-edit").each(function(){
 		if(found == true){
-			console.log("here");
 			nextDiv = $(this);
 			found = false;
 		}
 		if(currentDiv.is($(this))){
-			console.log("found!");
+			// console.log("found next!");
 			found = true;
 		}
 	});
-	nextDiv.focus();
+	nextDiv.children('.editable-field').focus();
 }
 
-$( document ).ready(function() {
-	// Control strip
-	$('.strip').hide();
-	$('.editable-field').keypress(function(e){ keyPressEditable(e,$(this)) });
-	$('.editable-field').keydown(function(e){ keyDownEditable(e,$(this)) });
-	$('.editable-field').focusin(function(e){ focusInEditable($(this)) });
-	$('.editable-field').focusout(function(e){ focusOutEditable($(this)) });
-});
-
+function focusPrev(currentDiv){
+	// console.log("Focusing on previous editable-field");
+	var prevDiv;
+	var found = false;
+	// console.log(currentDiv.html());
+	$($(".row-edit").get().reverse()).each(function(){
+		// console.log($(this).html());
+		if(found == true){
+			prevDiv = $(this);
+			found = false;
+		}
+		if(currentDiv.is($(this))){
+			// console.log("found previous!");
+			found = true;
+		}
+	});
+	prevDiv.children('.editable-field').focus();
+}
 
 // STRIP FUNCTIONNALITIES
 
 function onClickTitleButton(){
 	// Retrieve div above the strip
 	var currentDiv;
-	$('.editable-field').each(function(){
+	$('.row-edit').each(function(){
 		if($(this).next().hasClass('strip')){
 			currentDiv = $(this);
 		}
@@ -179,5 +251,15 @@ function onClickTitleButton(){
 	} else { // paragraph
 		createNewParagraph(currentDiv);
 	}
-	currentDiv.next().focus();
+	focusNext(currentDiv);
 }
+
+
+$( document ).ready(function() {
+	// Control strip
+	$('.strip').hide();
+	$('.row-edit').keypress(function(e){ keyPressEditable(e,$(this)) });
+	$('.row-edit').keydown(function(e){ keyDownEditable(e,$(this)) });
+	$('.row-edit').focusin(function(e){ focusInEditable($(this)) });
+	$('.row-edit').focusout(function(e){ focusOutEditable($(this)) });
+});

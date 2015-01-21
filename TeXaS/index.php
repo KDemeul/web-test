@@ -9,6 +9,7 @@
 	<link href="css/left-navbar.css" rel="stylesheet">
 	<link href="css/global.css" rel="stylesheet">
 	<link href="css/strip.css" rel="stylesheet">
+	<link href="css/edit.css" rel="stylesheet">
 	<link href="css/background.css" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link href="css/bootstrap-social.css" rel="stylesheet">
@@ -27,7 +28,7 @@
 		<!-- Tab panes -->
 		<div class="tab-content">
 			<div role="tabpanel" class="tab-pane fade in active" id="edit">
-				<?php include('edit.php'); ?>
+					<?php include('edit.php'); ?>
 			</div>
 			<div role="tabpanel" class="tab-pane fade" id="setting">
 				Application settings 

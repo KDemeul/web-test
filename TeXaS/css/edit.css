@@ -1,0 +1,47 @@
+.editable-field
+{
+	/*outline: 0px solid transparent;*/
+}
+
+.row-edit
+{
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 10px;
+	min-height: 20px;
+	font-size: 10pt;
+	min-width: 900px;
+	width: 100%;
+}
+
+.row-edit h1
+{
+	font-size: 25pt;
+}
+
+.row-edit h2
+{
+	font-size: 20pt;
+}
+
+.row-edit h3
+{
+	font-size: 15pt;
+}
+
+.row-edit h4
+{
+	font-size: 13pt;
+}
+
+.row-edit h5
+{
+	font-size: 10pt;
+	font-style: italic;
+}
+
+.title-number
+{
+	text-align: right;
+}
