@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,500,600,700,800,900);
+
+body
+{
+    font-family: 'Vollkorn', serif;
+    /*background-color: black;*/
+    background-color: #eee;
+    color: black;
+    font-size: 11pt;
+}
+
+.letter 
+{
+    /*width: 25cm;*/
+    /*height: 35.35714285cm;*/
+    width: 21cm;
+    height: 29.7cm;
+    margin: auto;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    background-color: white;
+}
+/*ratio: 1.414285714*/
+
+.content
+{
+	left: 2.5cm;
+	top: 2.5cm;
+	position: relative;
+	width: 16cm;
+}
+
+.separator-xs
+{
+	height: 0.5cm;
+}
+
+.separator-sm
+{
+	height: 0.75cm;
+}
+
+.separator-md
+{
+	height: 1cm;
+}
+
+.separator-lg
+{
+	height: 1.25cm;
+}
+
+.bold
+{
+    font-weight: 800;
+}
+
+.light
+{
+    font-weight: 300;
+}
+
+.text-xs
+{
+	font-size: 9pt;
+}
+
+.text-sm
+{
+	font-size: 11pt;
+}
+
+.text-md
+{
+	font-size: 13pt
+}
+
+.text-lg
+{
+	font-size: 15pt;
+}
+
+.me
+{
+	text-align: justify;
+}
+
+.them
+{
+	text-align: right;
+}
+
+.object:before
+{
+	content: "Objet : ";
+	font-weight: bold;
+}
+
+/*
+pale red 732D33
+pink BF766F
+clear F2DAD8
+dark red 260101
+blood 0D0000
+
+orange CC3910
+yellow sand F1F2C0
+sand CCC59E
+green 8FA68E
+brown 332F29
+
+dark blue 2C3E50
+red E74C3C
+clear ECF0F1
+blue clear 3498DB
+blue 2980B9
+
+green 08AEAC
+*/
