@@ -27,7 +27,7 @@
 	<div id="main-pan">
 		<!-- Tab panes -->
 		<div class="tab-content">
-			<div role="tabpanel" class="tab-pane fade in active" id="edit">
+			<div role="tabpanel" class="tab-pane fade in" id="edit">
 				<div style="width: 1140px;">
 					<?php include('edit.php'); ?>
 				</div>
@@ -41,8 +41,8 @@
 			<div role="tabpanel" class="tab-pane fade" id="code">
 				LaTeX code editor
 			</div>
-			<div role="tabpanel" class="tab-pane fade" id="export">
-				Export document to PDF
+			<div role="tabpanel" class="tab-pane fade in active" id="export">
+				<?php include('export.php');?>
 			</div>
 			<div role="tabpanel" class="tab-pane fade" id="help">
 				Help with the app
@@ -60,5 +60,6 @@
 	<!-- Custom script -->
 	<script src="js/jquery.hotkeys.js"></script>
 	<script src="js/customscript.js"></script>
+	<script src="js/export.js"></script>
 </body>
 </html>

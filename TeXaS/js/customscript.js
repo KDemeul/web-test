@@ -90,8 +90,8 @@ function createNewSubsubsection(currentDiv,addNumerotation,addInToc){
 
 function createNewParagraph(currentDiv){
 	currentDiv.after('<div class="row row-edit">' + 
-		'<div contenteditable="true" class="col-xs-11 editable-field title-text">' + 
-		'...' +
+		'<div contenteditable="true" class="col-xs-offset-2 col-xs-8 editable-field">' + 
+		// '...' +
 		'</div>' +
 		'</div>');
 	addListener(currentDiv.next());
