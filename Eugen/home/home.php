@@ -10,13 +10,4 @@
       </div>
     </div>
   </div>
-  <div class="main">
-    <div class="post">
-      <h3> Vendredi 23 Janvier 2015</h3>
-      <h2> Le prochain album </h2>
-      <p> 
-        Bacon ipsum dolor amet bacon ball tip fatback, short ribs doner chuck pancetta ribeye flank venison filet mignon biltong landjaeger capicola. Venison boudin tail t-bone, porchetta pork chop hamburger brisket kielbasa sirloin ground round chuck pork loin. Cow boudin swine pig hamburger brisket pancetta pork loin pork t-bone turducken spare ribs. Doner ball tip frankfurter filet mignon t-bone sausage pork tri-tip drumstick pork loin. Hamburger doner ham ham hock pancetta cupim pig ball tip jowl pork chop andouille. Turkey leberkas capicola bresaola kevin.
-      </p>
-    </div>
-  </div>
 </div>
