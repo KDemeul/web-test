@@ -1,0 +1,67 @@
+/* Variable */
+/*@col1: #85DB18;
+@col2: #CDE855;
+@col3: #F5F6D4;
+@col4: #A7C520;
+@col5: #493F0B;
+*/
+@col1: #57B5B1; /*blue green*/
+@col2: #594f4f; /*brown*/
+@col3: #4c4a4c; /*grey*/
+@col4: #547da3; /* blue*/
+@col5: #c58d1e; /* yellow */
+
+.jumbotron
+{
+	background-color: @col4;
+	padding-left: 20px;
+}
+
+.jumbotron h1
+{
+	color: @col5;
+}
+.jumbotron h1 small
+{
+	color: @col2;
+}
+
+#container-home
+{
+	height: 100vh;
+	background-color: darken(white,15%);
+}
+
+#container-home img
+{
+	width: 200px;
+	height: 200px;
+	padding: 10px;
+	border: 5px solid darken(@col4,15%);
+	border-radius: 50%;
+}
+
+.main
+{
+	background-color: @col2; 
+	border: 20px solid @col2;
+	width: 800px;
+	margin: auto;
+}
+
+.post
+{
+	box-shadow: 0 0 10px 2px black;
+	padding: 20px;
+	background-color: white;
+}
+
+.post h3
+{
+	color: @col4;
+}
+
+.post h2
+{
+	color: @col1;
+}

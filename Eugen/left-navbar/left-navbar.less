@@ -1,0 +1,79 @@
+/* Variable */
+/*@col1: #85DB18;
+@col2: #CDE855;
+@col3: #F5F6D4;
+@col4: #A7C520;
+@col5: #493F0B;
+*/
+@col1: #57B5B1; /*brown*/
+@col2: #594f4f; /*blue green*/
+@col3: #4c4a4c; /*blue*/
+@col4: #547da3; /* grey*/
+@col5: #c58d1e; /* yellow */
+
+.line-height(@height: 80px)
+{
+	line-height: @height;
+}
+
+.left-navbar
+{
+	background-color: @col2;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	border-right: 1px solid darken(@col3,15%);
+	text-align: center;
+	color: white;
+}
+
+.left-navbar ul
+{	
+	font-weight: 300;
+	list-style-type: none;
+	.line-height;
+	font-size: 16px;
+	padding-left: 0;
+}
+
+
+.left-navbar-group-item
+{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.active
+{
+	position: relative;
+	width:  ~"calc(100% + 11px)";
+	background-color: @col3;
+}
+
+.active:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  border-width: 10px 10px 0 0;
+  border-style: solid;
+  border-color: darken(@col3,15%) rgba(0,0,0,0);
+}
+
+.active 
+{
+	color: @col5;
+}
+
+
+.left-navbar-field-name
+{
+	display: none;
+}
+
+.left-navbar li
+{
+	cursor: pointer; 
+	cursor: hand;
+}
